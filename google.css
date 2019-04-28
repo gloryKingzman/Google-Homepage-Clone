@@ -1,0 +1,280 @@
+:root {
+    --footer-color: green;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 14px;
+}
+
+body {
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: black;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    padding: 10px;
+}
+
+.nav-main {
+    float: right;
+    margin-right: 20px;
+}
+
+ul.nav-main li {
+    padding: 0px 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul.nav-main li {
+    list-style: none;
+    /*float: right;*/
+    margin: 0 auto;
+}
+
+.Apps a {
+    background-image: url("C:/Users/KingsMen/Documents/Google Project/images/i1_1967ca6a.png");
+    /*background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");*/
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 500px 60px;
+    cursor: pointer;
+    background-position: -125px -32px;
+    vertical-align: middle;
+}
+
+.sign-in a {
+    background-color: blue;
+    color: #fff;
+    padding: 5px 10px !important;
+    text-decoration-line: none;
+    text-decoration-style: none;
+}
+
+div.main {
+    margin-top: 200px;
+    display: block;
+    text-align: center;
+}
+
+div#google_logo img {
+    border-radius: 0px !important;
+    border-style: none !important;
+    width: 272px;
+    margin: auto;
+    display: block;
+}
+
+.search {
+    margin: auto;
+}
+
+input {
+    width: var(--input-size, 600px);
+    height: 50px;
+    top: 20px;
+    opacity: 0.5;
+    border: 1px rgb(194, 194, 194) solid;
+    background-color: rgb(255, 255, 255);
+    font-size: 24px;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+}
+
+
+/*trying to get shadow to work on searchbar*/
+
+input:focus {
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+input:not (:focus) form {
+    box-shadow: none;
+}
+
+
+/*trying to get shadow to work*/
+
+.text {
+    padding-left: 20px;
+    display: flex;
+    word-wrap: break-word;
+    flex: 100%;
+}
+
+.blink {
+    font-size: 20px;
+    font-family: calibri;
+    line-height: 34px;
+}
+
+placeholder {
+    opacity: 0.1;
+}
+
+@media (max-width: 500px) {
+    --input-size: 250px;
+}
+
+.search_button {
+    font-size: 12px !important;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button.search_button:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+
+/*attribute selector test*/
+
+button[type] {
+    padding: 10px !important;
+    text-align: center;
+    cursor: pointer;
+}
+
+button[type]:hover {
+    transition: 0.4s;
+}
+
+
+/*attribute selector test*/
+
+
+/*
+img {
+    width: 20%;
+    position: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+}*/
+
+
+/*
+footer {
+    position: relative;
+    top: 180px;
+    background-color: rgb(236, 236, 236);
+    height: 55px;
+}
+*/
+
+
+/*div.footer {
+    margin-top: 140px;
+    color: rgba(39, 38, 38, 0.54) !important;
+    display: block;
+}*/
+
+.button {
+    display: flex;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+}
+
+button.search_button {
+    padding: 5px;
+    margin: 20px 5px;
+    border: none;
+    background-color: #f3f3f3;
+    border-radius: 1px;
+}
+
+div.languages {
+    margin-top: 20px;
+}
+
+.languages {
+    position: relative;
+    margin: auto;
+    display: inline-flex;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+}
+
+.languages span {
+    color: blue;
+    padding-left: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/*Footer Section*/
+
+.footer {
+    position: relative;
+    top: 82px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    height: auto;
+    color: var(--footer-color, rgb(60, 61, 60));
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+}
+
+a.country {
+    padding: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+    /*border-bottom: 1px solid #fff;*/
+    color: rgb(60, 61, 60);
+}
+
+hr {
+    border: 1px solid rgb(211, 211, 211);
+}
+
+div ul.footer-main {
+    float: left;
+    padding-left: 10px;
+    color: var() rgb(60, 61, 60);
+}
+
+ul.footer-main li.left {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+div ul.footer-main1 {
+    list-style: none;
+    float: right;
+    padding-right: 10px;
+    color: var(--footer-color, rgb(60, 61, 60));
+}
+
+ul.footer-main1 li.right {
+    display: inline-block;
+    padding: 10px;
+}
